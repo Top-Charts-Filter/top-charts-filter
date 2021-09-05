@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "top charts filter provides a filtering and data service of the popular applications",
   "main": "backend/server.js",
+  "type":"module",
   "scripts": {
     "server": "node backend/server",
     "client": "npm start --prefix frontend"
