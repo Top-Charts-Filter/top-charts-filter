@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Top-Charts-Filter/top-charts-filter/issues"
   },
-  "homepage": "https://github.com/Top-Charts-Filter/top-charts-filter#readme"
+  "homepage": "https://github.com/Top-Charts-Filter/top-charts-filter#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
