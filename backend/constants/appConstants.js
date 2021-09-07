@@ -19,9 +19,9 @@ export const AppEarningsTypes = {
 /* This enumeration stores the types of the devices that an application 
     is developed for */
 export const DeviceTypes = {
-    ANDROID_MOBILE: "android",
-    IPHONE: "iphone",
-    IPAD: "ipad"
+    ANDROID_MOBILE: "MOBILE",
+    IPHONE: "IPHONE",
+    IPAD: "IPAD"
 }
 
 /* This enumeration stores the types of an application */
