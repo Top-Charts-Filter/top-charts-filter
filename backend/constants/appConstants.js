@@ -23,3 +23,8 @@ const DeviceTypes = {
     IPHONE = "iphone",
     IPAD = "ipad"
 }
+
+/* This enumeration stores the types of an application */
+const Categories = {
+    GAMES = "games"
+}
