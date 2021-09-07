@@ -7,3 +7,11 @@ const OperatingSystems = {
     ANDROID: "android"
 }
 
+/* This enumeration stores the types that an application has
+    about its earnings method
+    it can be free, paid or a top-grossing app */
+const AppEarningsTypes = {
+    FREE: "free",
+    PAID: "paid",
+    TOP_GROSSING: "top-grossing"
+}
