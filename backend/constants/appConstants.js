@@ -19,12 +19,12 @@ const AppEarningsTypes = {
 /* This enumeration stores the types of the devices that an application 
     is developed for */
 const DeviceTypes = {
-    ANDROID_MOBILE = "android",
-    IPHONE = "iphone",
-    IPAD = "ipad"
+    ANDROID_MOBILE: "android",
+    IPHONE: "iphone",
+    IPAD: "ipad"
 }
 
 /* This enumeration stores the types of an application */
 const Categories = {
-    GAMES = "games"
+    GAMES: "games"
 }
