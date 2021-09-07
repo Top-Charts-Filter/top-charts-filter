@@ -15,3 +15,11 @@ const AppEarningsTypes = {
     PAID: "paid",
     TOP_GROSSING: "top-grossing"
 }
+
+/* This enumeration stores the types of the devices that an application 
+    is developed for */
+const DeviceTypes = {
+    ANDROID_MOBILE = "android",
+    IPHONE = "iphone",
+    IPAD = "ipad"
+}
