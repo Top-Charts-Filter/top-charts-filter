@@ -1,22 +1,22 @@
 /* this file contains all the countries in the system */
 
-const countries = {
-    unitedStates: {
+const Countries = {
+    UnitedStates: {
         name: "United States",
         code: "US"
     },
-    germany: {
+    Germany: {
         name: "Germany",
         code: "DE"
     },
-    unitedKingdom: {
+    UnitedKingdom: {
         name: "United Kingdom",
         code: "GB"
     },
-    australia:{
+    Australia:{
         name: "Australia",
         code: "AU"
     }
 };
 
-export default countries;
+export default Countries;
