@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "server": "node backend/server",
-    "client": "npm start --prefix frontend"
+    "client": "npm start --prefix frontend",
+    "seed-categories": "node backend/functionalities/seeders/categorySeeder"
   },
   "repository": {
     "type": "git",
