@@ -397,7 +397,530 @@ const categories = [
         subCategories: [],
         parent: null,
         fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Art & Design",
+        categoryId: "art_and_design",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Auto & Vehicles",
+        categoryId: "auto_and_vehicles",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Beauty",
+        categoryId: "beauty",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Books & Reference",
+        categoryId: "books_and_reference",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Business",
+        categoryId: "business",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Comics",
+        categoryId: "comics",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Communication",
+        categoryId: "communication",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Dating",
+        categoryId: "dating",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Education",
+        categoryId: "education",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Entertainment",
+        categoryId: "entertainment",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Events",
+        categoryId: "events",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Family",
+        categoryId: "family",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Action & Adventure",
+        categoryId: "family_action",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Brain Games",
+        categoryId: "family_braingames",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Creativity",
+        categoryId: "family_create",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Education",
+        categoryId: "family_education",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Music & Video",
+        categoryId: "family_musicvideo",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Pretend Play",
+        categoryId: "family_pretend",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Finance",
+        categoryId: "finance",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Food & Drink",
+        categoryId: "food_and_drink",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Game",
+        categoryId: "game",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Action",
+        categoryId: "game_action",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Adventure",
+        categoryId: "game_adventure",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Arcade",
+        categoryId: "game_arcade",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Board",
+        categoryId: "game_board",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Card",
+        categoryId: "game_card",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Casino",
+        categoryId: "game_casino",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Casual",
+        categoryId: "game_casual",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Hyper-Casual",
+        categoryId: "hyper_casual",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: false
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Educational",
+        categoryId: "game_educational",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Music",
+        categoryId: "game_music",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Puzzle",
+        categoryId: "game_puzzle",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Racing",
+        categoryId: "game_racing",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Role Playing",
+        categoryId: "game_role_playing",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Simulation",
+        categoryId: "game_simulation",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Sports",
+        categoryId: "game_sports",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Strategy",
+        categoryId: "game_strategy",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Trivia",
+        categoryId: "game_trivia",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Word",
+        categoryId: "game_word",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Health & Fitness",
+        categoryId: "health_and_fitness",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "House & Home",
+        categoryId: "house_and_home",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Libraries & Demo",
+        categoryId: "libraries_and_demo",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Lifestyle",
+        categoryId: "lifestyle",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Maps & Navigation",
+        categoryId: "maps_and_navigation",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Medical",
+        categoryId: "medical",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Music & Audio",
+        categoryId: "music_and_audio",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "News & Magazines",
+        categoryId: "news_and_magazines",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Parenting",
+        categoryId: "parenting",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Personalization",
+        categoryId: "personalization",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Photography",
+        categoryId: "photography",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Productivity",
+        categoryId: "productivity",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Shopping",
+        categoryId: "shopping",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Social",
+        categoryId: "social",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Sports",
+        categoryId: "sports",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Tools",
+        categoryId: "tools",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Travel & Local",
+        categoryId: "travel_and_local",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Weather",
+        categoryId: "weather",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryName: "Video Players & Editors",
+        categoryId: "video_players",
+        apps: [],
+        subCategories: [],
+        parent: null,
+        fetchable: true
     }
+
 ];
 
 
