@@ -653,7 +653,7 @@ const categories = [
     {
         os: OperatingSystems.ANDROID,
         categoryName: "Hyper-Casual",
-        categoryId: "hyper_casual",
+        categoryId: "game_hyper_casual",
         apps: [],
         subCategories: [],
         parent: null,
