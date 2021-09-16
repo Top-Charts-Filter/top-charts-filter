@@ -3,7 +3,7 @@
 to connect to the MongoDB database */
 
 import mongoose from 'mongoose'
-import { FAILURE } from '../constants/globalConstants';
+import { FAILURE } from '../constants/globalConstants.js';
 
 async function connectDB(){
     /* this function will connect to MongoDB */
