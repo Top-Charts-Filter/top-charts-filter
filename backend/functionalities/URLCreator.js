@@ -54,7 +54,7 @@ export function generateTopChartsURL(requestedOS = OperatingSystems.IOS,
                                       .filter( category => categoryId === GAMES);
     }
 
-    /* 2. */
+    /* 2. Create the foundation URL to SensorTower */
 
     let baseURL = new URL(SENSORTOWER_BASE_URL);
 
