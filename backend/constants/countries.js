@@ -49,3 +49,23 @@ export const Countries = {
     
 };
 
+export function isValidCountry(testCountryCode){
+    /*  
+        this function is responsible for validating the country data in the program
+        it must be one of the countries in the systems, otherwise do not let it move forward
+    */
+
+    // To-do: Write a country validation logic
+
+    if(!testCountryCode){
+        // if a null or undefined value for a country comes, 
+        // it fails the validation
+        return false;
+    }
+
+    let allCountryCodes = Object.values(Countries).map( country => (country.code));
+
+    let result = allCountryCodes.includes(testCountryCode);
+
+    return result;
+}
