@@ -1,5 +1,6 @@
 /* This file contains all the categories in the system */
-import { OperatingSystems } from "../constants/appConstants.js";
+import { isValidOperatingSystem, OperatingSystems } from "../constants/appConstants.js";
+import { FAILURE } from "../constants/globalConstants.js";
 
 export const categories = [
     {
@@ -954,3 +955,31 @@ export const categoriesAndSubcategoriesData =
                         "game_trivia", "game_word"]
     }
 ]
+
+export function isValidCategory(testOS, testCategory){
+    /* this function validates whether a given category is in the database
+       or not with its given operating systems */
+    
+    if(!testOS || !testCategory){
+        // if not provided, they are not valid
+        return false; 
+    }
+
+    try {
+        /* first make sure that the os is valid */
+        isValidOperatingSystem(testOS);
+
+        let categoriesOfThisOS = categories.filter( category => category.os === testOS ).map( category => (category.categoryId));
+
+        let result = categoriesOfThisOS.includes(testCategory);
+
+        return result;
+
+    } catch (error) {
+
+        console.error(error.message);
+
+        process.exit(FAILURE);
+    }
+
+}
