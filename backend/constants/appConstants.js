@@ -24,9 +24,47 @@ export const DeviceTypes = {
     IPAD: "IPAD"
 }
 
-/* This enumeration stores the types of an application */
-export const Categories = {
-    GAMES: "games"
+/* This enumeration stores the limits of the applications that the SensorTowerAPI provides */
+export const Limits = {
+    MAX: 200,
+    MEDIUM: 100
+}
+
+/* Validator Functions */
+/* these functions will make sure that the inputs to the program
+   is one of these constants */
+
+export function isValidOperatingSystem(os){
+    /* this function is responsible for validating the operating system data
+       in the program, it must be one of the valid operating systems */
+    
+    let validOperatinsSystems = Object.values(OperatingSystems);
+
+    if (validOperatinsSystems.includes(os))
+        return true;
+    else
+        return false;
 }
 
 
+export function isValidDeviceType(deviceType){
+    /* this function is responsible for validating the device type data
+       in the program, it must be one of the valid device types */
+    
+    let validDeviceTypes = Object.values(DeviceTypes);
+
+    if (validDeviceTypes.includes(deviceType))
+        return true;
+    else 
+        return false;
+}
+
+export function isValidLimit(limit){
+    /* this function is responsible for validating the limit data
+       in the program, it must be positive */
+
+    if (limit > 0 && Number.isInteger(limit))
+        return true;
+    else 
+        return false;
+}
