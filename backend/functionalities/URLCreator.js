@@ -4,14 +4,15 @@ import { categories, isValidCategory } from '../data/categories.js';
 import { SENSORTOWER_BASE_URL } from '../constants/globalConstants.js';
 import { FAILURE } from '../constants/globalConstants.js';
 
-const GAMES = "6014";
+const GAMES_IOS = categories.filter( category => category.os === OperatingSystems.IOS)
+                        .filter( category => category.categoryName === "Games");
 // category id of games category in ios operating system for default
 
 export function generateTopChartsURL(requestedOS = OperatingSystems.IOS, 
                                     requestedDeviceType = DeviceTypes.IPHONE,
                                     requestedDate = new Date(),
                                     requestedCountry = Countries.UnitedStates.code, 
-                                    requestedCategory = GAMES,
+                                    requestedCategory = GAMES_IOS,
                                     requestedLimit = Limits.MAX ){
     /* this function creates the Remote URL, based on the given parameters 
        it is the SensorTower API URL to fetch data */
@@ -51,7 +52,7 @@ export function generateTopChartsURL(requestedOS = OperatingSystems.IOS,
         requestedOS = OperatingSystems.IOS;
         /* make games the default category */
         requestedCategory = categories.filter( category => category.os === requestedOS)
-                                      .filter( category => categoryId === GAMES);
+                                      .filter( category => categoryName === "Games");
     }
 
     /* 2. Create the foundation URL to SensorTower */
