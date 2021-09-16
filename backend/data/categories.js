@@ -1,7 +1,7 @@
 /* This file contains all the categories in the system */
 import { OperatingSystems } from "../constants/appConstants.js";
 
-const categories = [
+export const categories = [
     {
         os: OperatingSystems.IOS,
         categoryName: "Books",
@@ -923,5 +923,34 @@ const categories = [
 
 ];
 
-
-export default categories;
+/* These are subcategory information that has be inserted to the database */
+export const categoriesAndSubcategoriesData =
+[
+    {
+        "os": OperatingSystems.IOS,
+        "categoryId": "6014",
+        "subcategories": [
+            "7001", "7002", "7004", "7005", "7006", "7003", "7009", "7011", "7012",
+            "7013", "7014", "7015", "7016", "7017", "7018", "7019", "9099"]
+    },
+    {
+        os: OperatingSystems.IOS,
+        categoryId: "9007",
+        subcategories: ["10000", "10001","10002"]
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryId: "family",
+        subcategories: ["family_action","family_braingames","family_create",
+                        "family_education","family_musicvideo","family_pretend"]
+    },
+    {
+        os: OperatingSystems.ANDROID,
+        categoryId: "game",
+        subcategories: ["game_action", "game_adventure","game_arcade", "game_board",
+                        "game_card", "game_casino","game_casual", "game_hyper_casual",
+                        "game_educational", "game_music","game_puzzle", "game_racing",
+                        "game_role_playing", "game_simulation","game_sports", "game_strategy",
+                        "game_trivia", "game_word"]
+    }
+]
