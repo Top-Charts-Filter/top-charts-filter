@@ -1,65 +1,79 @@
-import { DeviceTypes, OperatingSystems, Categories } from '../constants/appConstants.js'
-import Countries from '../constants/countries.js';
+import { DeviceTypes, OperatingSystems, Limits, isValidOperatingSystem, isValidDeviceType } from '../constants/appConstants.js'
+import { Countries, isValidCountry } from '../data/countries.js';
+import { categories, isValidCategory } from '../data/categories.js';
 import { SENSORTOWER_BASE_URL } from '../constants/globalConstants.js';
 import { FAILURE } from '../constants/globalConstants.js';
-import path from 'path'
+
+const GAMES = "6014";
+// category id of games category in ios operating system for default
 
 export function generateTopChartsURL(requestedOS = OperatingSystems.IOS, 
-                     requestedDate = new Date(), 
-                     requestedDeviceType = DeviceTypes.IPHONE,
-                     requestedCountry = Countries.UnitedStates.code, 
-                     requestedCategory = Categories.GAMES,
-                     requestedLimit = 200){
-    /* this function creates the Remote URL, based on the given paramters 
+                                    requestedDeviceType = DeviceTypes.IPHONE,
+                                    requestedDate = new Date(),
+                                    requestedCountry = Countries.UnitedStates.code, 
+                                    requestedCategory = GAMES,
+                                    requestedLimit = Limits.MAX ){
+    /* this function creates the Remote URL, based on the given parameters 
        it is the SensorTower API URL to fetch data */
-    
-    let baseURL = new URL(SENSORTOWER_BASE_URL);
 
-    let relativePath = path.basename("/api");
-    
-    switch (requestedOS) {
-        case OperatingSystems.IOS:
-            relativePath = path.join(relativePath, OperatingSystems.IOS);
-            break;
-        case OperatingSystems.ANDROID:
-            relativePath = path.join(relativePath, OperatingSystems.ANDROID);
-            break;
-        default:
-            throw new Error("invalid operating system type");
-            return FAILURE;
+    /* 1. Control the parameters first */
+        /* Operating System */
+    if(!isValidOperatingSystem(requestedOS)){
+        // if the provided operating system is not valid,
+        // make it ios by default
+        requestedOS = OperatingSystems.IOS;
     }
 
-    relativePath = path.join(relativePath, "rankings");
-    relativePath = path.join(relativePath, "get_category_rankings");
+        /* Limit */
+    if(requestedLimit <= 0 ){
+        // if the requested limit is negative or zero,
+        // make it medium by default
+        requestedLimit = Limits.MEDIUM;
+    }
+
+        /* Device Type */
+    if(!isValidDeviceType(requestedDeviceType)){
+        // if the provided device type is not valid, make is iphone
+        requestedDeviceType = DeviceTypes.IPHONE;
+    }
+
+        /* Country */
+    // Control the country, if not exists, make US
+    if(!isValidCountry(requestedCountry)){
+        requestedCountry = Countries.UnitedStates;
+    }
+
+        /* Categories */
+    // Control categories, if not exists, make Games defult
+    if(!isValidCategory(requestedOS, requestedCategory)){
+        // if an invalid category comes to this function, make is valid category
+
+        requestedOS = OperatingSystems.IOS;
+        /* make games the default category */
+        requestedCategory = categories.filter( category => category.os === requestedOS)
+                                      .filter( category => categoryId === GAMES);
+    }
+
+    /* 2. */
+
+    let baseURL = new URL(SENSORTOWER_BASE_URL);
+
+    let baseForRelativePath = "/api";
+    let relativePath = baseForRelativePath
+
+    // Join operating system
+    relativePath += "/" + requestedOS;
+    // Join rankings
+    relativePath += "/rankings";
+    // Join get category rankings
+    relativePath += "/get_category_rankings";
 
     /* set the relative path of the base url */
     baseURL.pathname = relativePath;
 
-    /* control the parameters first */
-        /* Limit */
-    if(requestedLimit <= 0 ){
-        throw new Error("limit must be a positive integer");
-    }
-        /* Device Type */
-    switch (requestedDeviceType) {
-        case DeviceTypes.ANDROID_MOBILE:
-        case DeviceTypes.IPAD:
-        case DeviceTypes.IPHONE:
-            break;
-        default:
-            // Make iPhone default device tpye if other than iPhone is sent
-            requestedDeviceType = DeviceTypes.IPHONE;
-            break;
-    }
-        /* Country */
-    // TO-DO: Control the country, if not exists, make US
+    /* 3. Inject the search parameters */
 
-        /* Categories */
-    // TO-DO: Control categories, if not exists, make Games defult
-
-    /* inject the search parameters */
-
-    baseURL.searchParams.append("category", categoryDecider(requestedOS, requestedCategory));
+    baseURL.searchParams.append("category", requestedCategory);
     baseURL.searchParams.append("country", requestedCountry);
     baseURL.searchParams.append("date", requestedDate.toISOString());
     baseURL.searchParams.append("device", requestedDeviceType);
@@ -69,29 +83,7 @@ export function generateTopChartsURL(requestedOS = OperatingSystems.IOS,
     return baseURL.href;
 }
 
-function categoryDecider(os, category){
-    /* this function will decide the category code in order to create a URL
-       since category ids of android and ios are different */
-    // TO-DO: Write a better way to dealing with categories and os
-    switch(os){
-        case OperatingSystems.IOS:
-            switch (category) {
-                case Categories.GAMES:
-                    return "6014";
-                default:
-                    return "6014";
-            }
-        case OperatingSystems.ANDROID:
-            switch (category) {
-                case Categories.GAMES:
-                    return "game";
-                default:
-                    return "game";
-            }
-    }
-}
-
-export default genereateURL;
+export default generateTopChartsURL;
 
 
 /* 
