@@ -5,7 +5,8 @@ import { SENSORTOWER_BASE_URL } from '../constants/globalConstants.js';
 import { FAILURE } from '../constants/globalConstants.js';
 
 const GAMES_IOS = categories.filter( category => category.os === OperatingSystems.IOS)
-                        .filter( category => category.categoryName === "Games");
+                            .filter( category => category.categoryName === "Games")[0]
+                            .categoryId;
 // category id of games category in ios operating system for default
 
 export function generateTopChartsURL(requestedOS = OperatingSystems.IOS, 
@@ -52,7 +53,8 @@ export function generateTopChartsURL(requestedOS = OperatingSystems.IOS,
         requestedOS = OperatingSystems.IOS;
         /* make games the default category */
         requestedCategory = categories.filter( category => category.os === requestedOS)
-                                      .filter( category => categoryName === "Games");
+                                      .filter( category => category.categoryName === "Games")[0]
+                                      .categoryId;
     }
 
     /* 2. Create the foundation URL to SensorTower */
