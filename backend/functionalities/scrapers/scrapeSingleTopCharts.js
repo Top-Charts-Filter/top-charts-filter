@@ -5,6 +5,8 @@ import { generateTopChartsURL } from '../URLCreator.js'
 import { DeviceTypes, isValidDeviceType, isValidLimit, isValidOperatingSystem, Limits, OperatingSystems } from '../../constants/appConstants.js';
 import { categories, isValidCategory } from '../../data/categories.js';
 import { Countries, isValidCountry } from '../../data/countries.js';
+import isValidDate from '../validators/dateValidator.js';
+import rectifyDate from '../rectifiers/rectifyDate.js';
 
 
 async function ScrapeSingleTopCharts(operatingSystem = OperatingSystems.IOS, 
@@ -44,6 +46,10 @@ async function ScrapeSingleTopCharts(operatingSystem = OperatingSystems.IOS,
 
     if(!isValidLimit){
         limit = Limits.MAX;
+    }
+
+    if(!isValidDate(date)){
+        date = rectifyDate(date);
     }
     
     /* 2. Create URL to Connect to the APIs */

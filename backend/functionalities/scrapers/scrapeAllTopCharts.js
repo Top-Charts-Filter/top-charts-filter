@@ -4,6 +4,8 @@ import waitSync from 'wait-sync'
 import { OperatingSystems, DeviceTypes, OperatingSystemsAndDeviceTypes, Limits } from "../../constants/appConstants.js";
 import { categories } from "../../data/categories.js";
 import { Countries } from "../../data/countries.js";
+import rectifyDate from '../rectifiers/rectifyDate.js';
+import isValidDate from '../validators/dateValidator.js';
 /* Functionalities */
 import ScrapeSingleTopCharts from "./scrapeSingleTopCharts.js";
 
@@ -24,6 +26,11 @@ async function ScrapeEveryting(date = new Date()){
     /* First filter out de-activated countries */
     const countries = Object.values(Countries).filter( country => country.isActive === true )
                                               .map( country => country.code );
+
+    /* Second, validate and rectify date */
+    if(!isValidDate(date)){
+        date = rectifyDate(date);
+    }
 
     for(let pair of OperatingSystemsAndDeviceTypes){
         /* for each operating systems and device type pair */

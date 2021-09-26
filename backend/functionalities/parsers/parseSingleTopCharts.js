@@ -49,8 +49,8 @@ async function parseSingleTopCharts(topCharts, date, country, os, deviceType, ca
         return;
     }
 
-    if(isValidDate(date)){
-        rectifyDate(date);
+    if(!isValidDate(date)){
+        date = rectifyDate(date);
     }
     
     /* Step 2 */
