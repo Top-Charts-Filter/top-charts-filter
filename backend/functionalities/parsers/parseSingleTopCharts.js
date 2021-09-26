@@ -1,10 +1,12 @@
 /* Models */
+import App from '../../models/appModel.js'
+import Category from '../../models/categoryModel.js'
+/* Constants and Functionalities */
 import { isValidDeviceType, isValidOperatingSystem } from '../../constants/appConstants.js';
 import { isValidCategory } from '../../data/categories.js';
 import { isValidCountry } from '../../data/countries.js';
-import App from '../../models/appModel.js'
-import Category from '../../models/categoryModel.js'
-
+import isValidDate from '../validators/dateValidator.js'
+import rectifyDate from '../rectifiers/rectifyDate.js'
 
 async function parseSingleTopCharts(topCharts, date, country, os, deviceType, category){
     /* this function will parse a single top charts
@@ -41,11 +43,17 @@ async function parseSingleTopCharts(topCharts, date, country, os, deviceType, ca
         return;
     }
 
+    /* validate and rectify date */
     if(!date){
         throw new Error("date must be provided for parsing");
         return;
     }
+
+    if(isValidDate(date)){
+        rectifyDate(date);
+    }
     
+    /* Step 2 */
 
     // To-do: convert dates into real dates
     //     release date, download date, update date
