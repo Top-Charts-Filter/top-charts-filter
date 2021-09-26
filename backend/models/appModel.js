@@ -1,12 +1,18 @@
 import mongoose from 'mongoose'
+/* Constants */
+import { AppEarningsTypes, DeviceTypes, OperatingSystems } from '../constants/appConstants.js';
+import { Countries } from '../data/countries.JS';
 
 const rankSchema = mongoose.Schema(
     { 
-        "rank": Number,
-        "country": String,
-        "os": String,
-        "date": Date
-
+        "rank": { type: Number, required: true },
+        "country": { type: String, required: true, default: Countries.UnitedStates},
+        "os": {type: String, required: true, default: OperatingSystems.IOS},
+        "date": {type: Date, required: true, default: new Date()},
+        "category": { type: mongoose.Schema.Types.ObjectId, ref: 'Category'},
+        "categoryId": { type: String, required: true, default: "6014"},
+        "deviceType": { type: String, required: true, default: DeviceTypes.IPHONE},
+        "earningsType": { type: String, required: true, default: AppEarningsTypes.FREE}
     });
 
 const appSchema = mongoose.Schema( 
@@ -24,7 +30,7 @@ const appSchema = mongoose.Schema(
         "icon": { type: String, required: true },
         "iconUrl": { type: String, required: true },
         "url": { type: String, required: true },
-        "categories": [String],
+        "categories": [ { type: mongoose.Schema.Types.ObjectId, ref: 'Category' } ],
         "valid_countries": [String],
         "app_view_url": { type: String, required: true},
         "publisher_profile_url": { type: String },
