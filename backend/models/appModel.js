@@ -18,7 +18,6 @@ const rankSchema = mongoose.Schema(
 const appSchema = mongoose.Schema( 
     {
         "app_id": { type: String, required: true },
-        "canonical_country": { type: String, required: true },
         "name": { type: String, required: true },
         "publisher_name": { type: String },
         "publisher_id": { type: String },
