@@ -3,47 +3,58 @@
 export const Countries = {
     "UnitedStates": {
         name: "United States",
-        code: "US"
+        code: "US",
+        isActive: true
     },
     "Australia":{
         name: "Australia",
-        code: "AU"
+        code: "AU",
+        isActive: true
     },
     "Canada":{
         name: "Canada",
-        code: "CA"
+        code: "CA",
+        isActive: false
     },
     "China":{
         name: "China",
-        code: "CN"
+        code: "CN",
+        isActive: false
     },
     "France":{
         name: "France",
-        code: "FR"
+        code: "FR",
+        isActive: false
     },
     "Germany": {
         name: "Germany",
-        code: "DE"
+        code: "DE",
+        isActive: false
     },
     "GreatBritain": {
         name: "Great Britain",
-        code: "GB"
+        code: "GB",
+        isActive: false
     },
     "Italy": {
         name: "Italy",
-        code: "IT"
+        code: "IT",
+        isActive: false
     },
     "SouthKorea": {
         name: "South Korea",
-        code: "KR"
+        code: "KR",
+        isActive: false
     },
     "Japan": {
         name: "Japan",
-        code: "JP"
+        code: "JP",
+        isActive: false
     },
     "Russia": {
         name: "Russia",
-        code: "RU"
+        code: "RU",
+        isActive: false
     }
 };
 
