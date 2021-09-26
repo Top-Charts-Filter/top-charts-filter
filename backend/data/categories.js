@@ -10,7 +10,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -19,7 +20,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -28,7 +30,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -37,7 +40,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -46,7 +50,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -55,7 +60,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -64,7 +70,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -73,7 +80,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -82,7 +90,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -91,7 +100,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -100,7 +110,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -109,7 +120,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -118,7 +130,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -127,7 +140,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -136,7 +150,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -145,7 +160,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -154,7 +170,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -163,7 +180,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -172,7 +190,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -181,7 +200,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -190,7 +210,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -199,7 +220,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -208,7 +230,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -217,7 +240,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -226,7 +250,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: false
+        fetchable: false,
+        isActive: true
     },
     {
         os: OperatingSystems.IOS,
@@ -235,7 +260,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -244,7 +270,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -253,7 +280,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -262,7 +290,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -271,7 +300,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -280,7 +310,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -289,7 +320,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -298,7 +330,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -307,7 +340,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -316,7 +350,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -325,7 +360,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -334,7 +370,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -343,7 +380,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -352,7 +390,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -361,7 +400,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -370,7 +410,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -379,7 +420,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -388,7 +430,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.IOS,
@@ -397,7 +440,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -406,7 +450,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -415,7 +460,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -424,7 +470,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -433,7 +480,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -442,7 +490,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -451,7 +500,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -460,7 +510,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -469,7 +520,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -478,7 +530,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -487,7 +540,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -496,7 +550,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -505,7 +560,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -514,7 +570,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -523,7 +580,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -532,7 +590,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -541,7 +600,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -550,7 +610,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -559,7 +620,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -568,7 +630,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -577,7 +640,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -586,7 +650,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -595,7 +660,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -604,7 +670,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -613,7 +680,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -622,7 +690,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -631,7 +700,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -640,7 +710,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -649,7 +720,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -658,7 +730,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: false
+        fetchable: false,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -667,7 +740,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -676,7 +750,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -685,7 +760,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -694,7 +770,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -703,7 +780,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -712,7 +790,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -721,7 +800,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -730,7 +810,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -739,7 +820,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -748,7 +830,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: true
     },
     {
         os: OperatingSystems.ANDROID,
@@ -757,7 +840,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -766,7 +850,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -775,7 +860,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -784,7 +870,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -793,7 +880,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -802,7 +890,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -811,7 +900,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -820,7 +910,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -829,7 +920,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -838,7 +930,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -847,7 +940,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -856,7 +950,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -865,7 +960,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -874,7 +970,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -883,7 +980,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -892,7 +990,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -901,7 +1000,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -910,7 +1010,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     },
     {
         os: OperatingSystems.ANDROID,
@@ -919,7 +1020,8 @@ export const categories = [
         apps: [],
         subCategories: [],
         parent: null,
-        fetchable: true
+        fetchable: true,
+        isActive: false
     }
 
 ];
