@@ -24,6 +24,23 @@ export const DeviceTypes = {
     IPAD: "IPAD"
 }
 
+/* Possible pairs of operatings systems and device types */
+export const OperatingSystemsAndDeviceTypes = [
+    {
+        "os": OperatingSystems.IOS,
+        "deviceType": DeviceTypes.IPHONE
+    },
+    {
+        "os": OperatingSystems.IOS,
+        "deviceType": DeviceTypes.IPAD
+    },
+    {
+        "os": OperatingSystems.ANDROID,
+        "deviceType": DeviceTypes.ANDROID_MOBILE
+    }
+]
+
+
 /* This enumeration stores the limits of the applications that the SensorTowerAPI provides */
 export const Limits = {
     MAX: 200,
