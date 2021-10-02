@@ -7,7 +7,8 @@
   "scripts": {
     "server": "node backend/functionalities/seeders/categorySeeder",
     "client": "npm start --prefix frontend",
-    "seed-categories": "node backend/functionalities/seeders/categorySeeder"
+    "seed-categories": "node backend/functionalities/seeders/categorySeeder",
+    "serverr": "node backend/server"
   },
   "repository": {
     "type": "git",

@@ -1,50 +1,52 @@
 import mongoose from 'mongoose'
 /* Constants */
 import { AppEarningsTypes, DeviceTypes, OperatingSystems } from '../constants/appConstants.js';
-import { Countries } from '../data/countries.JS';
+import { Countries } from '../data/countries.js';
+import rectifyDate from '../functionalities/rectifiers/rectifyDate.js';
 
 const rankSchema = mongoose.Schema(
     { 
-        "rank": { type: Number, required: true },
-        "country": { type: String, required: true, default: Countries.UnitedStates},
-        "os": {type: String, required: true, default: OperatingSystems.IOS},
-        "date": {type: Date, required: true, default: new Date()},
+        "rank": { type: Number },
+        "country": { type: String },
+        "os": {type: String },
+        "date": {type: Date, default: rectifyDate(new Date())},
         "category": { type: mongoose.Schema.Types.ObjectId, ref: 'Category'},
-        "categoryId": { type: String, required: true, default: "6014"},
-        "deviceType": { type: String, required: true, default: DeviceTypes.IPHONE},
-        "earningsType": { type: String, required: true, default: AppEarningsTypes.FREE}
+        "categoryId": { type: String },
+        "deviceType": { type: String },
+        "earningsType": { type: String }
     });
 
 const appSchema = mongoose.Schema( 
     {
-        "app_id": { type: String, required: true },
-        "name": { type: String, required: true },
+        "app_id": { type: String },
+        "name": { type: String },
+        "publisher": { type: mongoose.Schema.Types.ObjectId, ref: 'Publisher'},
         "publisher_name": { type: String },
         "publisher_id": { type: String },
         "humanized_name": { type: String },
-        "icon_url": { type: String, required: true },
-        "os": { type: String, required: true, default: 'android'},
-        "id": { type: String , required: true},
-        "appId": { type: String, required: true },
-        "icon": { type: String, required: true },
-        "iconUrl": { type: String, required: true },
-        "url": { type: String, required: true },
+        "icon_url": { type: String },
+        "os": { type: String, default: 'android'},
+        "id": { type: String },
+        "appId": { type: String },
+        "icon": { type: String },
+        "iconUrl": { type: String },
+        "url": { type: String },
         "categories": [ { type: mongoose.Schema.Types.ObjectId, ref: 'Category' } ],
         "valid_countries": [String],
-        "app_view_url": { type: String, required: true},
+        "app_view_url": { type: String },
         "publisher_profile_url": { type: String },
-        "release_date": { type: Date, required: true },
+        "release_date": { type: Date },
         "updated_date": { type: Date },
-        "in_app_purchases": { type: Boolean, required: true, default: false },
+        "in_app_purchases": { type: Boolean },
         "shows_ads": Boolean,
         "buys_ads": Boolean,
-        "rating": { type: Number, required: true, default: 0 },
+        "rating": { type: Number, default: 0 },
         "price": { type: Number, default: 0},
-        "global_rating_count": { type: Number, required: true, default: 0 },
-        "rating_count": { type: Number, required: true, default: 0 },
-        "rating_count_for_current_version": { type: Number, required: true, default: 0 },
-        "rating_for_current_version": { type: Number, required: true, default: 0 },
-        "version": { type: String, required: true, default: '1.0.0' },
+        "global_rating_count": { type: Number, default: 0 },
+        "rating_count": { type: Number, default: 0 },
+        "rating_count_for_current_version": { type: Number, default: 0 },
+        "rating_for_current_version": { type: Number, default: 0 },
+        "version": { type: String, default: '1.0.0' },
         "apple_watch_enabled": { type: Boolean, default: null},
         "apple_watch_icon": { type: String },
         "imessage_enabled": { type: Boolean, default: null},
@@ -72,10 +74,10 @@ const appSchema = mongoose.Schema(
         "publisher_address": String,
         "publisher_country": String,
         "feature_graphic": String,
-        "short_description": { type: String, required: true, default: ''},
+        "short_description": { type: String },
         "advisories": [String],
         "content_rating": { type: String },
-        "ranksData": [rankSchema],
+        "ranks": [rankSchema],
         "downloads_revenue_date": { type: Date }
     }, 
     { timestamps: true }
